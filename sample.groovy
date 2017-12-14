@@ -9,7 +9,10 @@ stage('build'){
 }
 }
 def unittest(){
-stage('unittests'){
+stage('tests'){
+  parallel(
+    'code analyze':{print 'a'},
+    'unit tests':{print 'b'})
 }
 }
 return this
