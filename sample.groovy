@@ -6,6 +6,7 @@ stage('prep'){
 
 def build(){
 stage('build'){
+  print 'build'
 }
 }
 def unittest(){
